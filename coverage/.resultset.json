@@ -8,6 +8,7 @@
         null,
         1,
         2,
+        2,
         null,
         null,
         1,
@@ -16,22 +17,23 @@
         null,
         1,
         1,
-        null,
         null,
         null,
         1,
         null,
         null
       ],
+      "/Users/irinabaldwin/Dropbox/Projects/daily-diary/spec/features/add_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/irinabaldwin/Dropbox/Projects/daily-diary/spec/features/daily_diary_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
         1,
         1,
         1,
@@ -41,6 +43,6 @@
         null
       ]
     },
-    "timestamp": 1540288310
+    "timestamp": 1540290245
   }
 }

@@ -3,7 +3,8 @@ require 'sinatra/base'
 class DailyDiary < Sinatra::Base
 
   get '/' do
-    "First diary entry"
+    @diary_entries = ["First day at Makers", "TDD is awesome"]
+    erb(:homepage)
   end
 
   get '/add' do
