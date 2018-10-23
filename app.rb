@@ -7,8 +7,8 @@ class DailyDiary < Sinatra::Base
     erb(:homepage)
   end
 
-  get '/add' do
-    erb(:add)
+  get '/add_entry' do
+    erb(:add_entry)
   end
 
   post '/save_entry' do
