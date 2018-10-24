@@ -1,13 +1,14 @@
 require 'sinatra/base'
 
-class DailyDiary < Sinatra::Base
+class DiaryEntry < Sinatra::Base
 
   get '/' do
-    @diary_entries = ["First day at Makers", "TDD is awesome"]
+    @diary_entries = DiaryEntry.all_titles
     erb(:homepage)
   end
 
   get '/add_entry' do
+    diary_entry = DiaryEntry.create(params[:title], params[:body])
     erb(:add_entry)
   end
 

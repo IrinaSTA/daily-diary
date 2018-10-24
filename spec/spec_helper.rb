@@ -17,7 +17,7 @@ require 'capybara/rspec'
 require 'pg'
 require 'rspec'
 
-Capybara.app = DailyDiary
+Capybara.app = DiaryEntry
 
 
 
