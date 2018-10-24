@@ -3,16 +3,16 @@ require 'sinatra/base'
 class DiaryEntry < Sinatra::Base
 
   get '/' do
-    @diary_entries = DiaryEntry.all_titles
+    @titles = ["Week 1 at Makers", "Week 2 at Makers"]
     erb(:homepage)
   end
 
   get '/add_entry' do
-    diary_entry = DiaryEntry.create(params[:title], params[:body])
     erb(:add_entry)
   end
 
   post '/save_entry' do
+    @title = params[:title]
     redirect('/')
   end
 
